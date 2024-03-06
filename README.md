@@ -5,6 +5,6 @@ This project is a personal tool for speeding up research process. The main goal 
 Requires Marker and a sufficient GPU to run it. It has a bit of a lengthy install process but once you have it, it can process PDF files very quickly: [Marker](https://github.com/VikParuchuri/marker/tree/master)  
 
 # TODO
-- [ ] Add Claude Opus (probably better than ChatGPT for science)
+- [x] Add Claude Opus (probably better than ChatGPT for science)
 - [ ] Github repository parsing  
 - [ ] Better UI/formatting. Primarily so that inline markdown/equations from LLM can be rendered properly.
