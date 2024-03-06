@@ -4,7 +4,6 @@ from abc import abstractclassmethod
 from copy import deepcopy
 from secret import API_KEY
 import openai
-openai.api_key = API_KEY
 
 class BaseChatHarness:
     """
@@ -28,7 +27,7 @@ class BaseChatHarness:
         self.debug_mode = debug_mode
         self.verbosity = verbosity
 
-        self.client = openai.OpenAI()
+        self.client = openai.OpenAI(api_key = API_KEY)
 
     def reset(self):
         self.messages = deepcopy(self.message_base)
@@ -39,7 +38,8 @@ class BaseChatHarness:
 
         if type(user_input) is not str:
             user_input = str(user_input)
-            user_input = self.run_commands(user_input)
+        
+        user_input = self.run_commands(user_input)
 
         self.messages.append({"role":"user", "content":user_input})
 
