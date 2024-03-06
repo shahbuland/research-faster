@@ -7,9 +7,7 @@ import openai
 
 class BaseChatHarness:
     """
-    Base class for all chat bots that make use of tools
-
-    :param verbosity: 0 = no prints, 1 = print all model generated text, 2 = print all model generated text and tool calls
+    Base class for some chat bot made off of openai api
     """
     def __init__(self, init_prompt, debug_mode = False, init_messages : List[str] = [], engine = "gpt-4-0125-preview", verbosity = 0):
         self.model = engine
