@@ -6,4 +6,5 @@ Requires Marker and a sufficient GPU to run it. It has a bit of a lengthy instal
 
 # TODO
 - [ ] Add Claude Opus (probably better than ChatGPT for science)
-- [ ] Github repository parsing
+- [ ] Github repository parsing  
+- [ ] Better UI/formatting. Primarily so that inline markdown/equations from LLM can be rendered properly.
